@@ -17,5 +17,72 @@
         </ul>
       </nav>
     </header>
+    <main role="banner">
+      <article role="article">
+        <section>
+          <video controls width="800" height="500" class="center-vid">
+            <source src="videos/IMG_0361.mp4" type="video/mp4" class="center-vid">
+          </video>
+          <h3>&quot;They Just Keep Moving the Line&quot; from Smash at Don't Tell Mama NYC</h3>
+        </section>
+        <section>
+          <video controls width="800" height="500" class="center-vid">
+            <source src="videos/IMG_0365.mp4" type="video/mp4">
+          </video>
+          <h3>Dee Dee in &quot;The Prom&quot;</h3>
+        </section>
+        <section>
+          <video controls width="800" height="500" class="center-vid">
+            <source src="videos/07.30.24 Crazy On You - 16.mp4" type="video/mp4">
+          </video>
+          <h3>&quot;Crazy On You&quot; by Heart</h3>
+        </section>
+        <section>
+          <video controls width="800" height="500" class="center-vid">
+            <source src="videos/10.09.24 Mama, I'm a Big Girl Now - 16.mp4" type="video/mp4">
+          </video>
+          <h3>&quot;Mama, I'm a Big Girl Now&quot; from Hairspray</h3>
+        </section>
+      </article>
+    </main>
+    <footer role="contentinfo">
+      <button id="openDialog" accesskey="c">Contact Me</button>
+
+      <dialog id="contactDialog">
+        <form method="dialog">
+          <h2>Contact Me</h2>
+
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name">
+          <br><br>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email">
+          <br><br>
+
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age" min="0" max="100">
+          <br><br>
+
+          <label for="headshot">Upload Headshot:</label>
+          <input type="file" id="headshot" name="headshot" accept="image/*">
+          <br><br>
+
+          <label for="message">Message:</label><br>
+          <textarea id="message" name="message" rows="4"></textarea>
+          <br><br>
+
+          <menu>
+            <button value="cancel">Cancel</button>
+            <button type="submit">Send</button>
+          </menu>
+        </form>
+      </dialog>
+
+      <script>
+        const dialog = document.getElementById('contactDialog');
+        document.getElementById('openDialog').onclick = () => dialog.showModal();
+      </script>
+    </footer>
   </body>
 </html>
