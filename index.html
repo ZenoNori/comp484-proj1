@@ -32,6 +32,7 @@
         <section>
           <table class="center-table">
             <caption><h2>Complete List of Shows</h2></caption>
+            <!-- td element is used to extend the rows of the table -->
             <tr>
               <th scope="col">Show</th>
               <th scope="col">Role</th>
@@ -173,14 +174,14 @@
         </section>
       </article>
     </main>
-    <footer role="contentinfo">
+     <footer role="contentinfo"> <!-- accesskey attribute allows for the contact box to open through keybinds "alt + c" -->
       <button id="openDialog" accesskey="c">Contact Me</button>
 
-      <dialog id="contactDialog">
+      <dialog id="contactDialog"> <!-- dialog element is used to create a pop up box where you can fill out contact information -->
         <form method="dialog">
           <h2>Contact Me</h2>
-
-          <label for="name">Name:</label>
+          <!-- label elements are used for screen readers to announce them, and clicking them will jump to their respective text box -->
+          <label for="name">Name:</label> 
           <input type="text" id="name" name="name">
           <br><br>
 
@@ -188,11 +189,15 @@
           <input type="email" id="email" name="email">
           <br><br>
 
+          <label for="phone">Phone:</label> <!-- pattern attribute ensures that 10 digits are required for phone no. -->
+          <input type="tel" id="phone" name="phone" pattern="\d{10}" title="Please enter a 10-digit phone number">
+          <br><br>
+
           <label for="age">Age:</label>
           <input type="number" id="age" name="age" min="0" max="100">
           <br><br>
 
-          <label for="headshot">Upload Headshot:</label>
+          <label for="headshot">Upload Headshot:</label> <!-- accept attribute ensures that the uploaded file is an img -->
           <input type="file" id="headshot" name="headshot" accept="image/*">
           <br><br>
 
