@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title>Mia Catalano</title>
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <header role="banner">
+      <h1>Hi! I'm Mia Catalano</h1>
+      <img 
+        src="images/MiaCatalano_Professional.jpeg" 
+        alt="html"
+        width="400"
+        class="flowRight">
+      <nav role="navigation">
+        <ul>
+          <li><a href="index.html" title="Mia Catalano"><h2>Mia Catalano</h2></a></li>
+          <li><a href="about.html" title="About Me"><h2>About Me</h2></a></li>
+          <li><a href="summary.html" title="Resume &amp; Headshots"><h2>Resume &amp; Headshots</h2></a></li>
+          <li><a href="media.html" title="Digital Media"><h2>Digital Media</h2></a></li>
+        </ul>
+      </nav>
+    </header>
+    <main role="main">
+      <article role="article">
+        <br>
+        <header class="intro">
+          <p>Hi, I&apos;m Mia! — an actor who loves bringing stories to life. 
+            Whether I&apos;m on stage or in front of the camera, I put my heart, energy, and curiosity into every role. 
+            For me, acting is all about connection, and I&apos;m excited to share that with every audience I meet.</p>
+        </header>
+        <section>
+          <h3>Lorem Ipsum</h3>
+          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. 
+            Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. 
+            Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. 
+            Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. 
+            Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. 
+            Aenean vulputate eleifend tellus. Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. 
+            Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. 
+            Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. 
+            Nam eget dui. Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. 
+            Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. 
+            Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante. Etiam sit amet orci eget eros faucibus tincidunt. 
+            Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc,</p>
+        </section>
+        <section>
+          <table>
+            <tr>
+              <th scope="col">Shows</th>
+              <th scope="col">Theatre</th>
+              <th scope="col">Year</th>
+            </tr>
+            <tr>
+              <th scope="row">A Midsummer Night</th>
+              <td>Theatre 1</td>
+              <td>2023</td>
+            </tr>
+          </table>
+          <br>
+        </section>
+      </article>
+    </main>
+    <footer role="contentinfo">
+      <button id="openDialog" accesskey="c">Contact Me</button>
+
+      <dialog id="contactDialog">
+        <form method="dialog">
+          <h2>Contact Me</h2>
+
+          <label for="name">Name:</label>
+          <input type="text" id="name" name="name">
+          <br><br>
+
+          <label for="email">Email:</label>
+          <input type="email" id="email" name="email">
+          <br><br>
+
+          <label for="age">Age:</label>
+          <input type="number" id="age" name="age" min="0" max="100">
+          <br><br>
+
+          <label for="headshot">Upload Headshot:</label>
+          <input type="file" id="headshot" name="headshot" accept="image/*">
+          <br><br>
+
+          <label for="message">Message:</label><br>
+          <textarea id="message" name="message" rows="4"></textarea>
+          <br><br>
+
+          <menu>
+            <button value="cancel">Cancel</button>
+            <button type="submit">Send</button>
+          </menu>
+        </form>
+      </dialog>
+
+      <script>
+        const dialog = document.getElementById('contactDialog');
+        document.getElementById('openDialog').onclick = () => dialog.showModal();
+      </script>
+    </footer>
+  </body>
+</html>
